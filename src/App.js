@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import Homepage from "./components/homepage/homepage";
-import ConnectWallet from "./components/connect_wallet/connect_wallet";
+import Place from "./components/place/place";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Homepage />} />
-        <Route path='/connect_wallet' element={<ConnectWallet />} />
+        <Route path='/place' element={<Place />} />
       </Routes>
       <Footer />
     </div>
