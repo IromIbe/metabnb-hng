@@ -10,7 +10,7 @@ function Card({ imgSrc, key }) {
         <img
           src={imgSrc}
           alt=''
-          className=' w-[250px] h-[256px] bg-[#D7D7D7] rounded-[15px]'
+          className=' max-w-[250px] max-h-[256px] bg-[#D7D7D7] rounded-[15px]'
         />
       </div>
       <div className='flex  justify-evenly items-start lg:gap-2 mt-3'>
