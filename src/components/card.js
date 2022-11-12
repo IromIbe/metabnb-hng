@@ -3,13 +3,13 @@ import React from "react";
 function Card({ imgSrc, key }) {
   return (
     <div
-      className='border-[1px] border-[#D7D7D7] flex  flex-col rounded-[15px] bg-[linear-gradient(124.4deg_#FFFFFF_10.8%_#FFFFFF_87.34%)] p-4'
+      className='border-[1px] border-[#D7D7D7] flex  flex-col rounded-[15px] bg-[linear-gradient(124.4deg_#FFFFFF_10.8%_#FFFFFF_87.34%)] py-4 px-2 lg:p-4'
       key={key}
     >
       <div className='flex justify-center items-center'>
         <img src={imgSrc} alt='' />
       </div>
-      <div className='flex xsm:flex-row flex-col justify-evenly items-start lg:gap-2 mt-3'>
+      <div className='flex sm:flex-row md:flex-col xl:flex-row flex-col justify-evenly items-start lg:gap-2 mt-3'>
         <div>
           <span className='text-[12px] text-[#434343] font-normal block'>
             Desert king
@@ -19,7 +19,7 @@ function Card({ imgSrc, key }) {
           </span>
           <img src='/star.svg' alt='' />
         </div>
-        <div className='flex justify-center  xsm:items-end items-start flex-col'>
+        <div className='flex justify-center md:items-start sm:items-end xl:items-end items-start flex-col'>
           <span className='text-[12px] text-[#434343] font-bold block'>
             1MBT per night
           </span>

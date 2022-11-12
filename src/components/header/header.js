@@ -12,7 +12,9 @@ function Header() {
   return (
     <div className='header sticky top-0 z-50 w-full py-4 xl:px-24 lg:px-12 md:px-4  xsm:px-6 px-2 flex justify-between items-center bg-white'>
       <div className='sm:w-[unset] xsm:w-[200px] w-[180px]'>
-        <img src='/logo.svg' alt='' className='md:mr-6 lg:mr-0' />
+        <Link to='/'>
+          <img src='/logo.svg' alt='' className='md:mr-6 lg:mr-0' />
+        </Link>
       </div>
       <div className='md:hidden block'>
         <HiOutlineMenuAlt3 onClick={showMenu} className='scale-150' />

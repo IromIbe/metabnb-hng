@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import Homepage from "./components/homepage/homepage";
-import Place from "./components/place/place";
+import Place from "./components/connect_wallet/place";
 
 function App() {
   return (

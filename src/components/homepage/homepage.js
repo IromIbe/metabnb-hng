@@ -35,7 +35,7 @@ function Homepage() {
               placeholder='Search for location'
               className='border-[1px] border-[#A3A3A3] bg-[rgba(247_247_247_0.1)] w-[70%] px-2 h-[inherit] outline-0 rounded-tl-lg rounded-bl-lg'
             />
-            <button className='bg-[#A02279] hover:bg-[#97074f] h-[inherit] rounded-tr-lg rounded-br-lg sm:px-12 w-[30%] text-white text-base font-normal'>
+            <button className='bg-[#A02279] hover:bg-[#97074f] h-[inherit] flex justify-center items-center rounded-tr-lg rounded-br-lg sm:px-12 w-[30%] text-white text-base font-normal'>
               Search
             </button>
           </div>
@@ -66,15 +66,15 @@ function Homepage() {
         <h3 className=' font-[700] md:text-[40px] lg:text-5xl sm:text-[34px] xsm:text-[30px] text-[24px] text-center text-black'>
           Inspiration for your next adventure
         </h3>
-        <div className='grid md:gap-14 lg:gap-3 xsm:gap-[30px] xl:gap-8 sm:gap-6 gap-3  lg:grid-cols-4 lg:grid-rows-2 sm:grid-cols-2 sm:grid-rows-4 mt-12 xl:px-20 lg:px-12 md:px-10  xsm:px-6  px-4'>
+        <div className='grid md:gap-4 lg:gap-3  gap-6 xl:gap-8 sm:gap-6  xsm:gap-2  md:grid-cols-4 md:grid-rows-2 xsm:grid-cols-2 xsm:grid-rows-4 mt-12 xl:px-20 lg:px-12 md:px-10  xsm:px-6  px-4'>
           {homeData.map((data, idx) => (
             <Card key={idx} imgSrc={data} />
           ))}
         </div>
       </div>
-      <div className='metabnb py-12 bg-[#A02279] border-black flex md:flex-row  flex-col-reverse justify-between items-center xl:px-20 lg:px-12 md:px-10  xsm:px-5 px-3 '>
-        <div className='flex-[.28]'>
-          <h1 className='md:text-[43px] sm:text-[35px] xsm:text-[30px]font-bold text-[29px] md:pt-0 pt-5 text-white'>
+      <div className='metabnb py-12 bg-[#A02279] border-black flex sm:flex-row  flex-col-reverse justify-between items-center xl:px-20 lg:px-12 md:px-10  xsm:px-5 px-3 '>
+        <div className='lg:flex-[.28] md:flex-[.5]'>
+          <h1 className='md:text-[43px] sm:text-[35px] xsm:text-[30px] font-bold text-[29px] md:pt-0 pt-5 text-white'>
             Metabnb NFTs
           </h1>
           <p className='text-white text-[13px] font-normal leading-[29px]'>
@@ -86,8 +86,8 @@ function Homepage() {
             Learn more
           </button>
         </div>
-        <div className='flex-[.5] flex justify-center items-center '>
-          <img src='/metabnb.svg' alt='' />
+        <div className='md:flex-[.5] flex justify-center items-center '>
+          <img src='/metabnb.svg' alt='' className=' sm:w-[unset]  w-[250px]' />
         </div>
       </div>
     </div>
