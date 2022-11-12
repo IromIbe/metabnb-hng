@@ -7,7 +7,11 @@ function Card({ imgSrc, key }) {
       key={key}
     >
       <div className='flex justify-center items-center'>
-        <img src={imgSrc} alt='' className='bg-gray w-[250px] h-[256px]' />
+        <img
+          src={imgSrc}
+          alt=''
+          className='bg-gray w-[250px] h-[256px] border-[#D7D7D7] border-[1px]'
+        />
       </div>
       <div className='flex  justify-evenly items-start lg:gap-2 mt-3'>
         <div>
