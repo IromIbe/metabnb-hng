@@ -5,13 +5,7 @@ import "./header.style.css";
 
 function MobileNav({ showMenu, active }) {
   return (
-    <div
-      className={
-        active
-          ? "md:hidden  flex-col flex items-center fixed inset-0 justify-center md:left-[50%] sm:left-[25%] left-[12.5%]  p-8 bg-white/10 backdrop-blur-lg gap-8"
-          : "hidden"
-      }
-    >
+    <div className=' mobile flex-col flex items-center fixed inset-0 justify-center md:left-[50%] sm:left-[25%] left-[12.5%]  p-8 bg-white/10 backdrop-blur-lg gap-8'>
       <div>
         <AiOutlineClose onClick={showMenu} className='cursor-pointer' />
       </div>

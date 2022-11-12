@@ -16,9 +16,9 @@ function Footer() {
           className='sm:w-[unset] xsm:w-[200px] w-[180px]'
         />
         <div className='social flex justify-start gap-7 items-center mt-16'>
-          <img src='/fb.svg' alt='' />
-          <img src='/ig.svg' alt='' />
-          <img src='/tweet.svg' alt='' />
+          <img src='/fb.svg' alt='facebook' />
+          <img src='/ig.svg' alt='instagram' />
+          <img src='/tweet.svg' alt='twitter' />
         </div>
         <p className='flex gap-2 mt-10'>
           <img src='/at.svg' alt='' />

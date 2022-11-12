@@ -1,56 +1,71 @@
 import { Link } from "react-router-dom";
 import MobileNav from "./mobile_nav";
 import { useState } from "react";
-import { HiOutlineMenuAlt3 } from "react-icons/hi";
+// import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import "./header.style.css";
 import Modal from "../modal";
 
 function Header() {
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState("nav_menu");
+  const [togglerIcon, setTogglerIcon] = useState("navbar-toggler");
   const [openModal, setOpenModal] = useState(false);
-  const showMenu = () => {
-    setActive(!active);
+
+  const navToggle = () => {
+    active === "nav_menu"
+      ? setActive("nav_menu nav_active")
+      : setActive("nav_menu");
+
+    // navbar toggler animation
+    togglerIcon === "navbar-toggler"
+      ? setTogglerIcon("navbar-toggler toggle")
+      : setTogglerIcon("navbar-toggler");
   };
+
   return (
     <div
       className={
-        "header sticky top-0 z-50 w-full py-4 xl:px-32 lg:px-12  md:px-4  xsm:px-6 px-2 flex justify-between items-center bg-white"
+        "header sticky top-0 h-[15vh] z-50 w-full py-4 xl:px-32 lg:px-12  md:px-4  xsm:px-6 px-2 flex justify-between items-center bg-white"
       }
     >
       <div className='sm:w-[unset] xsm:w-[200px] w-[180px]'>
         <Link to='/'>
-          <img src='/logo.svg' alt='' className='md:mr-6 lg:mr-0' />
+          <img src='/logo.svg' alt='' className='' />
         </Link>
       </div>
-      <div className='md:hidden block'>
-        <HiOutlineMenuAlt3 onClick={showMenu} className='scale-150' />
-      </div>
-      <div className='links md:flex justify-between items-center hidden'>
-        <div className='md:flex justify-between items-center lg:gap-14 md:gap-4 sm:gap:2'>
-          <Link to='/' className=' link'>
-            Home
-          </Link>
-          <Link to='/place' className=' link'>
-            Place to stay
-          </Link>
-          <Link to='' className=' link'>
-            NFTs
-          </Link>
-          <Link to='' className=' link'>
-            Community
-          </Link>
+      <div className={active}>
+        <div className=''>
+          <div className=' links'>
+            <Link to='/' className=' link'>
+              Home
+            </Link>
+            <Link to='/place' className=' link'>
+              Place to stay
+            </Link>
+            <Link to='' className=' link'>
+              NFTs
+            </Link>
+            <Link to='' className=' link'>
+              Community
+            </Link>
+          </div>
+        </div>
+        <div className=''>
+          <button
+            className="font-medium  font-['Red_Rose'] text-base rounded-[10px] text-[white] bg-[#A02279] py-3 px-6 hover:bg-[#97074f]"
+            onClick={() => setOpenModal(true)}
+          >
+            Connect wallet
+          </button>
         </div>
       </div>
-      <div className='md:block hidden'>
-        <button
-          className="font-medium  font-['Red_Rose'] text-base rounded-[10px] text-[white] bg-[#A02279] py-3 px-6 hover:bg-[#97074f]"
-          onClick={() => setOpenModal(true)}
-        >
-          Connect wallet
-        </button>
-      </div>
+
       <Modal open={openModal} onClose={() => setOpenModal(false)} />
-      <MobileNav showMenu={showMenu} active={active} />
+      <div className={togglerIcon} onClick={navToggle}>
+        <div className='line1'></div>
+        <div className='line2'></div>
+        <div className='line3'></div>
+      </div>
+      {/* <MobileNav showMenu={showMenu} active={active} /> */}
     </div>
   );
 }

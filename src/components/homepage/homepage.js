@@ -39,24 +39,24 @@ function Homepage() {
           </div>
         </div>
         <div className='illustration flex justify-center items-center flex-[.5]'>
-          <img src='/nft-group.svg' alt='' />
+          <img src='/nft-group.svg' alt='nft-group' />
         </div>
       </div>
 
       <div className='bg-[#A02279] height-[200px] w-full flex justify-around py-1'>
         <img
           src='/token.svg'
-          alt=''
+          alt='token'
           className='md:w-[unset] w-[50px] xsm:w-[100px]'
         />
         <img
           src='/metamask.svg'
-          alt=''
+          alt='metamask'
           className='md:w-[unset] w-[50px] xsm:w-[100px]'
         />
         <img
           src='/opensea.svg'
-          alt=''
+          alt='opensea'
           className='md:w-[unset] w-[50px] xsm:w-[100px]'
         />
       </div>
@@ -87,7 +87,7 @@ function Homepage() {
         <div className='md:flex-[.5] flex justify-center items-center '>
           <img
             src='/metabnb.svg'
-            alt=''
+            alt='metabnb'
             className=' md:w-[550px] sm:w-[750px]  w-[250px]'
           />
         </div>

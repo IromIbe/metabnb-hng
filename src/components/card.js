@@ -9,8 +9,8 @@ function Card({ imgSrc, key }) {
       <div className='flex justify-center items-center'>
         <img
           src={imgSrc}
-          alt=''
-          className=' max-w-[250px] max-h-[256px] bg-[#D7D7D7] rounded-[15px]'
+          alt='nft pic'
+          className=' bg-[#D7D7D7] rounded-[15px]'
         />
       </div>
       <div className='flex  justify-evenly items-start lg:gap-2 mt-3'>
@@ -21,7 +21,7 @@ function Card({ imgSrc, key }) {
           <span className='text-[10px] text-[#434343] font-normal block'>
             2345km away
           </span>
-          <img src='/star.svg' alt='' />
+          <img src='/star.svg' alt='rating' />
         </div>
         <div className='flex justify-center  items-start flex-col'>
           <span className='text-[10px] text-[#434343] font-bold block'>
