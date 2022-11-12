@@ -8,7 +8,7 @@ function Footer() {
     },
   ];
   return (
-    <div className='bg-black pt-16 pb-8 xl:px-20 sm:flex-row flex-col lg:px-12 md:px-10 flex justify-between items-start xsm:px-5 px-3'>
+    <div className='bg-black pt-16 pb-8 xl:px-32 sm:flex-row flex-col lg:px-12 md:px-10 flex justify-between items-start xsm:px-5 px-3'>
       <div className='flex flex-col justify-start items-start'>
         <img
           src='/footlogo.svg'
@@ -25,7 +25,7 @@ function Footer() {
           <span className='text-white text-base font-normal'>2022 Metabnb</span>
         </p>
       </div>
-      <div className='flex-[.85] sm:flex-[.92] grid sm:grid-cols-3 gap-10 xsm:gap-20 sm:gap-0 sm:mt-0 mt-6	sm:grid-rows-1 xsm:grid-cols-2 xsm:grid-rows-2 grid-cols-1 grid-rows-3'>
+      <div className='flex-[.85] sm:flex-[.90] grid sm:grid-cols-3 gap-10 xsm:gap-20 sm:gap-0 sm:mt-0 mt-6	sm:grid-rows-1 xsm:grid-cols-2 xsm:grid-rows-2 grid-cols-1 grid-rows-3'>
         {footerLinks.map((links, idx) => (
           <div key={idx} className='flex flex-col justify-center items-start'>
             <h1 className='text-white font-bold text-[18px] mb-2'>

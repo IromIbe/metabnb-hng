@@ -7,23 +7,23 @@ function Card({ imgSrc, key }) {
       key={key}
     >
       <div className='flex justify-center items-center'>
-        <img src={imgSrc} alt='' />
+        <img src={imgSrc} alt='' className='bg-gray w-[250px] h-[256px]' />
       </div>
-      <div className='flex sm:flex-row md:flex-col xl:flex-row flex-col justify-evenly items-start lg:gap-2 mt-3'>
+      <div className='flex  justify-evenly items-start lg:gap-2 mt-3'>
         <div>
-          <span className='text-[12px] text-[#434343] font-normal block'>
+          <span className='text-[10px] text-[#434343] font-normal block'>
             Desert king
           </span>
-          <span className='text-[12px] text-[#434343] font-normal block'>
+          <span className='text-[10px] text-[#434343] font-normal block'>
             2345km away
           </span>
           <img src='/star.svg' alt='' />
         </div>
-        <div className='flex justify-center md:items-start sm:items-end xl:items-end items-start flex-col'>
-          <span className='text-[12px] text-[#434343] font-bold block'>
+        <div className='flex justify-center  items-start flex-col'>
+          <span className='text-[10px] text-[#434343] font-bold block'>
             1MBT per night
           </span>
-          <span className='text-[12px] text-[#434343] font-normal block'>
+          <span className='text-[10px] text-[#434343] font-normal block'>
             available for 2weeks stay
           </span>
         </div>

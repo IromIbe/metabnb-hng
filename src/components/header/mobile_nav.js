@@ -28,7 +28,7 @@ function MobileNav({ showMenu, active }) {
         Community
       </Link>
 
-      <button className="font-medium  font-['Red_Rose'] text-base rounded-[10px] text-[white] bg-[#A02279] py-3 px-8 hover:bg-[#97074f]">
+      <button className="font-medium  font-['Red_Rose'] text-base rounded-[10px] text-[white] bg-[#A02279] py-3 px-6 hover:bg-[#97074f]">
         Connect wallet
       </button>
     </div>

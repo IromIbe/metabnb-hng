@@ -3,10 +3,13 @@
   font-family: "red rose";
   font-weight: 400;
   color: #434343;
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
 }
 
 .link:hover {
   color: #a02279;
+}
+.no-scroll {
+  overflow: hidden;
 }
