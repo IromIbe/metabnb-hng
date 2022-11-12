@@ -87,7 +87,11 @@ function Homepage() {
           </button>
         </div>
         <div className='md:flex-[.5] flex justify-center items-center '>
-          <img src='/metabnb.svg' alt='' className=' sm:w-[unset]  w-[250px]' />
+          <img
+            src='/metabnb.svg'
+            alt=''
+            className=' md:w-[550px] sm:w-[750px]  w-[250px]'
+          />
         </div>
       </div>
     </div>
