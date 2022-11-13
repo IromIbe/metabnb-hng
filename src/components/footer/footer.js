@@ -8,7 +8,7 @@ function Footer() {
     },
   ];
   return (
-    <div className='bg-black pt-16 pb-8 xl:px-32 sm:flex-row flex-col lg:px-12 md:px-10 flex justify-between items-start xsm:px-5 px-3'>
+    <div className='bg-black pt-16 pb-8 xl:px-32 sm:flex-row flex-col lg:px-12 md:px-10 flex justify-between items-start xsm:px-5 px-6'>
       <div className='flex flex-col justify-start items-start'>
         <img
           src='/footlogo.svg'
