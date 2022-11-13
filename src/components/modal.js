@@ -1,16 +1,13 @@
 import { AiOutlineClose } from "react-icons/ai";
 
 const preferred_wallet = [
-  { img: "/mask.svg", name: "Metamask" },
-  { img: "/connect.svg", name: "WalletConnect" },
+  { img: "/mask.webp", name: "Metamask" },
+  { img: "/connect.webp", name: "WalletConnect" },
 ];
 function Modal({ open, onClose }) {
   if (!open) return null;
   return (
-    <div
-      className='overlay bg-[#33333340] fixed w-full h-full top-0 left-0 right-0 bottom-0'
-      onClick={onClose}
-    >
+    <div className='overlay bg-[#33333340] fixed w-full h-full top-0 left-0 right-0 bottom-0'>
       <div className='modal bg-white rounded-[16px] max-w-[600px] w-full flex-col sm:h-[unset] h-screen fixed sm:top-[50%] sm:left-[50%] flex sm:translate-x-[-50%] sm:translate-y-[-50%]'>
         <div className='header flex justify-between items-center w-full pt-8 pb-4 xmd:px-8 px-3'>
           <h4 className='font-bold text-[#333333] text-[24px]'>
@@ -33,7 +30,7 @@ function Modal({ open, onClose }) {
                     <img src={wallet.img} alt={wallet.name} />
                     <span>{wallet.name}</span>
                   </div>
-                  <img src='/arrow.svg' alt='' />
+                  <img src='/arrow.webp' alt='' className='w-[13px]' />
                 </button>
               ))}
             </div>

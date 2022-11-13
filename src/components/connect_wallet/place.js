@@ -2,22 +2,22 @@ import React from "react";
 import Card from "../card";
 
 const placeData = [
-  "/one.svg",
-  "/two.svg",
-  "/three.svg",
-  "/four.svg",
-  "/five.svg",
-  "/six.svg",
-  "/seven.svg",
-  "/eight.svg",
-  "/nine.svg",
-  "/ten.svg",
-  "/eleven.svg",
-  "/twelve.svg",
-  "/thirteen.svg",
-  "/fourteen.svg",
-  "/fifteen.svg",
-  "/sixteen.svg",
+  "/one.webp",
+  "/two.webp",
+  "/three.webp",
+  "/four.webp",
+  "/five.webp",
+  "/six.webp",
+  "/seven.webp",
+  "/eight.webp",
+  "/nine.webp",
+  "/ten.webp",
+  "/eleven.webp",
+  "/twelve.webp",
+  "/thirteen.webp",
+  "/fourteen.webp",
+  "/fifteen.webp",
+  "/sixteen.webp",
 ];
 
 const subHeading = [

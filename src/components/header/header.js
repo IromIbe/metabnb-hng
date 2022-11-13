@@ -27,7 +27,7 @@ function Header() {
     >
       <div className='sm:w-[unset] xsm:w-[200px] w-[180px]'>
         <Link to='/'>
-          <img src='/logo.svg' alt='' className='' />
+          <img src='/logo.webp' alt='' className='' />
         </Link>
       </div>
       <div className={active}>

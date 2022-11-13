@@ -1,13 +1,13 @@
 import Card from "../card";
 const homeData = [
-  "/five.svg",
-  "/six.svg",
-  "/seven.svg",
-  "/eight.svg",
-  "/one.svg",
-  "/two.svg",
-  "/three.svg",
-  "/four.svg",
+  "/five.webp",
+  "/six.webp",
+  "/seven.webp",
+  "/eight.webp",
+  "/one.webp",
+  "/two.webp",
+  "/three.webp",
+  "/four.webp",
 ];
 
 function Homepage() {
@@ -39,23 +39,23 @@ function Homepage() {
           </div>
         </div>
         <div className='illustration flex justify-center items-center flex-[.5]'>
-          <img src='/nft-group.svg' alt='nft-group' />
+          <img src='/nft-group.webp' alt='nft-group' />
         </div>
       </div>
 
       <div className='bg-[#A02279] height-[200px] w-full flex justify-around py-1'>
         <img
-          src='/token.svg'
+          src='/token.webp'
           alt='token'
           className='md:w-[unset] w-[50px] xsm:w-[100px]'
         />
         <img
-          src='/metamask.svg'
+          src='/metamask.webp'
           alt='metamask'
           className='md:w-[unset] w-[50px] xsm:w-[100px]'
         />
         <img
-          src='/opensea.svg'
+          src='/opensea.webp'
           alt='opensea'
           className='md:w-[unset] w-[50px] xsm:w-[100px]'
         />
@@ -86,7 +86,7 @@ function Homepage() {
         </div>
         <div className='md:flex-[.5] flex justify-center items-center '>
           <img
-            src='/metabnb.svg'
+            src='/metabnb.webp'
             alt='metabnb'
             className=' md:w-[550px] sm:w-[750px]  w-[250px]'
           />

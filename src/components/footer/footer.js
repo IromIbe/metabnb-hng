@@ -11,17 +11,17 @@ function Footer() {
     <div className='bg-black pt-16 pb-8 xl:px-32 sm:flex-row flex-col lg:px-12 md:px-10 flex justify-between items-start xsm:px-5 px-6'>
       <div className='flex flex-col justify-start items-start'>
         <img
-          src='/footlogo.svg'
+          src='/footlogo.webp'
           alt=''
           className='sm:w-[unset] xsm:w-[200px] w-[180px]'
         />
         <div className='social flex justify-start gap-7 items-center mt-16'>
-          <img src='/fb.svg' alt='facebook' />
-          <img src='/ig.svg' alt='instagram' />
-          <img src='/tweet.svg' alt='twitter' />
+          <img src='/fb.webp' alt='facebook' />
+          <img src='/ig.webp' alt='instagram' />
+          <img src='/tweet.webp' alt='twitter' />
         </div>
         <p className='flex gap-2 mt-10'>
-          <img src='/at.svg' alt='' />
+          <img src='/at.webp' alt='' />
           <span className='text-white text-base font-normal'>2022 Metabnb</span>
         </p>
       </div>
