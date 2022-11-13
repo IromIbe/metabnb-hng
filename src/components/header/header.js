@@ -1,30 +1,28 @@
 import { Link } from "react-router-dom";
-import MobileNav from "./mobile_nav";
 import { useState } from "react";
-// import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { GrClose } from "react-icons/gr";
 import "./header.style.css";
 import Modal from "../modal";
 
 function Header() {
   const [active, setActive] = useState("nav_menu");
-  const [togglerIcon, setTogglerIcon] = useState("navbar-toggler");
-  const [openModal, setOpenModal] = useState(false);
+  const [togglerIcon, setTogglerIcon] = useState(false);
+  const [openModal, setOpenModal] = useState(true);
 
   const navToggle = () => {
     active === "nav_menu"
       ? setActive("nav_menu nav_active")
       : setActive("nav_menu");
 
-    // navbar toggler animation
-    togglerIcon === "navbar-toggler"
-      ? setTogglerIcon("navbar-toggler toggle")
-      : setTogglerIcon("navbar-toggler");
+    // toggle mobile nav icon
+    setTogglerIcon(!togglerIcon);
   };
 
   return (
     <div
       className={
-        "header sticky top-0 h-[15vh] z-50 w-full py-4 xl:px-32 lg:px-12  md:px-4  xsm:px-6 px-2 flex justify-between items-center bg-white"
+        "header sticky top-0 h-[94px] z-50 w-full py-4 xl:px-32 lg:px-12  md:px-4  xsm:px-6 px-2 flex justify-between items-center bg-white"
       }
     >
       <div className='sm:w-[unset] xsm:w-[200px] w-[180px]'>
@@ -60,12 +58,9 @@ function Header() {
       </div>
 
       <Modal open={openModal} onClose={() => setOpenModal(false)} />
-      <div className={togglerIcon} onClick={navToggle}>
-        <div className='line1'></div>
-        <div className='line2'></div>
-        <div className='line3'></div>
+      <div className='navbar-toggler' onClick={navToggle}>
+        {togglerIcon === true ? <GrClose /> : <HiOutlineMenuAlt3 />}
       </div>
-      {/* <MobileNav showMenu={showMenu} active={active} /> */}
     </div>
   );
 }
