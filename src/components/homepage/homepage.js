@@ -80,7 +80,7 @@ function Homepage() {
             gift cards which are traded as NFTs. These NFTs gives our cutomer
             access to loads of our exclusive services.
           </p>
-          <button className='bg-white text-[#A02279] font-normal text-base py-2 px-5 mt-5 rounded-lg hover:text-[white] hover:bg-[#A02279] hover:border-white hover:border-[1px]'>
+          <button className='bg-white text-[#A02279] font-normal text-base py-2 px-5 mt-5 rounded-lg hover:text-[white] hover:bg-[#A02279] border-white border-[1px]'>
             Learn more
           </button>
         </div>
