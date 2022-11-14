@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import { Link, useLocation } from "react-router-dom";
+import { useState, useLayoutEffect } from "react";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { GrClose } from "react-icons/gr";
 import "./header.style.css";
@@ -9,6 +10,15 @@ function Header() {
   const [active, setActive] = useState("nav_menu");
   const [togglerIcon, setTogglerIcon] = useState(false);
   const [openModal, setOpenModal] = useState(false);
+
+  // making mobile nav disappear on page change
+  let location = useLocation();
+  useLayoutEffect(() => {
+    active === "nav_menu nav_active"
+      ? setActive("nav_menu")
+      : setActive(active);
+    setTogglerIcon(false);
+  }, [location]);
 
   const navToggle = () => {
     active === "nav_menu"
