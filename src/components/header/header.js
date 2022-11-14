@@ -11,13 +11,14 @@ function Header() {
   const [togglerIcon, setTogglerIcon] = useState(false);
   const [openModal, setOpenModal] = useState(false);
 
-  // making mobile nav disappear on page change
+  // making mobile nav disappear on page change and scroll to top of the page
   let location = useLocation();
   useLayoutEffect(() => {
     active === "nav_menu nav_active"
       ? setActive("nav_menu")
       : setActive(active);
     setTogglerIcon(false);
+    document.documentElement.scrollTo(0, 0);
   }, [location]);
 
   const navToggle = () => {
